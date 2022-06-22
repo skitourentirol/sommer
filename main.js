@@ -59,7 +59,6 @@ let layerControl = L.control.layers({
     // "Grundkarte Tirol": startLayer,
     // "Esri World Imagery": L.tileLayer.provider("Esri.WorldImagery"),
     "eGrundkarte Tirol Sommer": startLayer,
-    "eGrundkarte Tirol Winter": eGrundkarteTirol.winter,
     "eGrundkarte Tirol Orthofoto": eGrundkarteTirol.ortho,
     "eGrundkarte Tirol Orthofoto mit Beschriftung": L.layerGroup([
         eGrundkarteTirol.ortho,
@@ -106,7 +105,7 @@ let getColor = function(value,ramp) {
 async function loadHuts(url) {
     let response = await fetch(url);
     let geojson = await response.json(); 
-    // console.log(geojson);
+    // console.log(geoJsonPoint.properties.NAME);
     let overlay = L.markerClusterGroup();
     layerControl.addOverlay(overlay,"Almen");
     overlay.addTo(map);
@@ -131,8 +130,53 @@ async function loadHuts(url) {
     }).addTo(overlay);
 }
 loadHuts("https://opendata.arcgis.com/datasets/cd1b86196f2e4f14aeae79269433a499_0.geojson");
-// Wetterstationslayer beim Laden anzeigen
-// overlays.temperature.addTo(map);
+
+
+// Radrouten Tirol Anzeigen Geojson
+async function loadTracks(url) {
+    let response = await fetch(url);
+    let geojson = await response.json(); 
+    console.log(geojson);
+    let overlay = L.featureGroup();
+    layerControl.addOverlay(overlay,"Bikerouten");
+    overlay.addTo(map);
+    // console.log(geoJsonPoint.properties.SCHWIERIGKEITSGRAD)
+
+    L.geoJSON(geojson, {
+        style: function(feature) {
+            // switch (feature.properties.SCHWIERIGKEITSGRAD){
+            //     case "leicht": return{color:"#2ECC40"};
+            //     case "mittelschwierig": return{color:"#0074D9"};
+            //     case "schwierig": return{color:"#FF4136"};
+            // }
+            let colors = {
+                "schwierig" : "#FF4136",
+                "mittelschwierig": "#0074D9", 
+                "leicht": "#2ECC40",
+            };
+
+            return {
+                color: `${colors[feature.properties.SCHWIERIGKEITSGRAD]}`,
+                weight: 4,
+                dashArray: [10, 6]
+
+            } 
+        }
+    }).bindPopup(function (layer) {
+        return `
+            <h4>${layer.feature.properties.ROUTENNAME} (${layer.feature.properties.ROUTEN_TYP}) </h4>
+            
+            von: ${layer.feature.properties.ROUTENSTART}<br>
+            nach: ${layer.feature.properties.ROUTENZIEL}<br>
+            <p><li> StreckenLänge: ${layer.feature.properties.LAENGE_HAUPTROUTE_KM} km</li>
+            <li> Fahrzeit: ${layer.feature.properties.FAHRZEIT}</li>
+            <li> Hoehenmeter bergauf: ${layer.feature.properties.HM_BERGAUF} m</li>
+            <li> Hoehenmeter bergab: ${layer.feature.properties.HM_BERGAB} m</li></p>
+        `;
+    
+    }).addTo(overlay);
+}
+loadTracks("https://data-tiris.opendata.arcgis.com/datasets/tiris::radrouten-tirol.geojson");
 
 
 // Station
