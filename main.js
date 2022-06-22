@@ -409,17 +409,17 @@ gpxTrack.on("loaded", function(evt) {
     //             <li> Hoehenmeter bergauf: ${gpxLayer.get_elevation_gain().toFixed()} m</li>
     //             <li> Hoehenmeter bergab: ${gpxLayer.get_elevation_loss().toFixed()} m</li>`;
     // gpxLayer.bindPopup(popup);
-});
-
-let elevationControl = L.control.elevation({
-    time: false,
-    elevationDiv: "#profile",
-    theme: "bike-tirol",
-    height: 200,
-    
-
 }).addTo(map);
-gpxTrack.on("addline", function(evt){
-    elevationControl.addData(evt.line);
+
+// let elevationControl = L.control.elevation({
+//     time: false,
+//     elevationDiv: "#profile",
+//     theme: "bike-tirol",
+//     height: 200,
     
-});
+
+// }).addTo(map);
+// gpxTrack.on("addline", function(evt){
+//     elevationControl.addData(evt.line);
+    
+// });

@@ -4,6 +4,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
+    background: url("data/images/summer.jpg"); 
 }
 
 a {
