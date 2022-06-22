@@ -1,0 +1,69 @@
+/* Stile für das Wetterstationen Tirol Beispiel */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: black;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    max-height: 50px;
+}
+
+header h2 {
+    margin: 0;
+}
+
+header nav {
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+article {
+    margin-top: 0.5em;
+}
+
+article #map {
+    width: 100%;
+    height: 85vh;
+    border: 1px solid gray;
+}
+
+footer {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+footer nav {
+    display: inline-block;
+}
+
+/* Stile für die Wetterstationen */
+
+.aws-div-icon span {
+    font-size: 1.25em;
+    font-weight: bold;  
+    padding: 0.3em;
+    border: 1px solid silver;
+    text-shadow: 
+        -1px -1px 0 white,
+        -1px 1px 0 white,
+        1px -1px 0 white,
+        1px 1px 0 white;
+    display: inline-block;
+    transform: translate(-30%, -50%);
+
+}

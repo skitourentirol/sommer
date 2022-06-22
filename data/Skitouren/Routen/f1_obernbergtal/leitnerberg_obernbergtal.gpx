@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:dkl="http://www.gpsware.de/DKL/1/1" xmlns:rtx="http://www.bike-gps.de/RTX/1/1" version="1.1" creator="KOMPASS Digital Map" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>KOMPASS Digital Map Track</name>
+    <desc></desc>
+    <time>2010-10-23T16:41:39Z</time>
+    <bounds minlat="47.022602" minlon="11.417062" maxlat="47.046056" maxlon="11.445853"/>
+  </metadata>
+  <trk>
+    <name>leitnerberg_obernbergtal</name>
+    <extensions>
+      <dkl:dkl>
+        <dkl:format_version>1.1</dkl:format_version>
+      </dkl:dkl>
+    </extensions>
+    <trkseg>
+      <trkpt lat="47.022684" lon="11.445853">
+        <ele>1348.00</ele>
+        <time>2010-10-22T21:09:02Z</time>
+      </trkpt>
+      <trkpt lat="47.022702" lon="11.445648">
+        <ele>1348.00</ele>
+        <time>2010-10-22T21:09:07Z</time>
+      </trkpt>
+      <trkpt lat="47.022602" lon="11.445279">
+        <ele>1347.00</ele>
+        <time>2010-10-22T21:09:18Z</time>
+      </trkpt>
+      <trkpt lat="47.022646" lon="11.445019">
+        <ele>1347.00</ele>
+        <time>2010-10-22T21:09:26Z</time>
+      </trkpt>
+      <trkpt lat="47.023090" lon="11.444355">
+        <ele>1374.00</ele>
+        <time>2010-10-22T21:09:51Z</time>
+      </trkpt>
+      <trkpt lat="47.023504" lon="11.443779">
+        <ele>1374.00</ele>
+        <time>2010-10-22T21:10:14Z</time>
+      </trkpt>
+      <trkpt lat="47.024543" lon="11.442363">
+        <ele>1413.00</ele>
+        <time>2010-10-22T21:11:11Z</time>
+      </trkpt>
+      <trkpt lat="47.025201" lon="11.442037">
+        <ele>1446.00</ele>
+        <time>2010-10-22T21:11:38Z</time>
+      </trkpt>
+      <trkpt lat="47.025564" lon="11.442069">
+        <ele>1484.00</ele>
+        <time>2010-10-22T21:11:53Z</time>
+      </trkpt>
+      <trkpt lat="47.025933" lon="11.441897">
+        <ele>1484.00</ele>
+        <time>2010-10-22T21:12:08Z</time>
+      </trkpt>
+      <trkpt lat="47.026491" lon="11.441739">
+        <ele>1529.00</ele>
+        <time>2010-10-22T21:12:31Z</time>
+      </trkpt>
+      <trkpt lat="47.026955" lon="11.441726">
+        <ele>1529.00</ele>
+        <time>2010-10-22T21:12:50Z</time>
+      </trkpt>
+      <trkpt lat="47.027271" lon="11.441600">
+        <ele>1555.00</ele>
+        <time>2010-10-22T21:13:03Z</time>
+      </trkpt>
+      <trkpt lat="47.027545" lon="11.441510">
+        <ele>1555.00</ele>
+        <time>2010-10-22T21:13:14Z</time>
+      </trkpt>
+      <trkpt lat="47.027820" lon="11.441362">
+        <ele>1555.00</ele>
+        <time>2010-10-22T21:13:26Z</time>
+      </trkpt>
+      <trkpt lat="47.027997" lon="11.441327">
+        <ele>1580.00</ele>
+        <time>2010-10-22T21:13:33Z</time>
+      </trkpt>
+      <trkpt lat="47.028661" lon="11.441070">
+        <ele>1593.00</ele>
+        <time>2010-10-22T21:14:01Z</time>
+      </trkpt>
+      <trkpt lat="47.028895" lon="11.440974">
+        <ele>1617.00</ele>
+        <time>2010-10-22T21:14:10Z</time>
+      </trkpt>
+      <trkpt lat="47.029096" lon="11.440921">
+        <ele>1617.00</ele>
+        <time>2010-10-22T21:14:18Z</time>
+      </trkpt>
+      <trkpt lat="47.029207" lon="11.441075">
+        <ele>1617.00</ele>
+        <time>2010-10-22T21:14:25Z</time>
+      </trkpt>
+      <trkpt lat="47.029403" lon="11.441205">
+        <ele>1617.00</ele>
+        <time>2010-10-22T21:14:33Z</time>
+      </trkpt>
+      <trkpt lat="47.029518" lon="11.441319">
+        <ele>1607.00</ele>
+        <time>2010-10-22T21:14:39Z</time>
+      </trkpt>
+      <trkpt lat="47.029669" lon="11.441298">
+        <ele>1633.00</ele>
+        <time>2010-10-22T21:14:45Z</time>
+      </trkpt>
+      <trkpt lat="47.029840" lon="11.441185">
+        <ele>1641.00</ele>
+        <time>2010-10-22T21:14:52Z</time>
+      </trkpt>
+      <trkpt lat="47.030170" lon="11.441116">
+        <ele>1641.00</ele>
+        <time>2010-10-22T21:15:06Z</time>
+      </trkpt>
+      <trkpt lat="47.030258" lon="11.441050">
+        <ele>1641.00</ele>
+        <time>2010-10-22T21:15:10Z</time>
+      </trkpt>
+      <trkpt lat="47.030547" lon="11.440905">
+        <ele>1660.00</ele>
+        <time>2010-10-22T21:15:22Z</time>
+      </trkpt>
+      <trkpt lat="47.030830" lon="11.440691">
+        <ele>1660.00</ele>
+        <time>2010-10-22T21:15:35Z</time>
+      </trkpt>
+      <trkpt lat="47.031049" lon="11.440488">
+        <ele>1660.00</ele>
+        <time>2010-10-22T21:15:45Z</time>
+      </trkpt>
+      <trkpt lat="47.031058" lon="11.440484">
+        <ele>1660.00</ele>
+        <time>2010-10-22T21:15:45Z</time>
+      </trkpt>
+      <trkpt lat="47.031455" lon="11.440114">
+        <ele>1691.00</ele>
+        <time>2010-10-22T21:16:04Z</time>
+      </trkpt>
+      <trkpt lat="47.031889" lon="11.439461">
+        <ele>1694.00</ele>
+        <time>2010-10-22T21:16:29Z</time>
+      </trkpt>
+      <trkpt lat="47.032242" lon="11.438881">
+        <ele>1716.00</ele>
+        <time>2010-10-22T21:16:50Z</time>
+      </trkpt>
+      <trkpt lat="47.032608" lon="11.438463">
+        <ele>1722.00</ele>
+        <time>2010-10-22T21:17:09Z</time>
+      </trkpt>
+      <trkpt lat="47.032755" lon="11.438136">
+        <ele>1722.00</ele>
+        <time>2010-10-22T21:17:19Z</time>
+      </trkpt>
+      <trkpt lat="47.032990" lon="11.437873">
+        <ele>1754.00</ele>
+        <time>2010-10-22T21:17:31Z</time>
+      </trkpt>
+      <trkpt lat="47.033464" lon="11.437141">
+        <ele>1754.00</ele>
+        <time>2010-10-22T21:17:59Z</time>
+      </trkpt>
+      <trkpt lat="47.033677" lon="11.437006">
+        <ele>1764.00</ele>
+        <time>2010-10-22T21:18:08Z</time>
+      </trkpt>
+      <trkpt lat="47.033863" lon="11.436872">
+        <ele>1785.00</ele>
+        <time>2010-10-22T21:18:16Z</time>
+      </trkpt>
+      <trkpt lat="47.034224" lon="11.436628">
+        <ele>1785.00</ele>
+        <time>2010-10-22T21:18:32Z</time>
+      </trkpt>
+      <trkpt lat="47.034555" lon="11.436495">
+        <ele>1785.00</ele>
+        <time>2010-10-22T21:18:46Z</time>
+      </trkpt>
+      <trkpt lat="47.034985" lon="11.436160">
+        <ele>1817.00</ele>
+        <time>2010-10-22T21:19:06Z</time>
+      </trkpt>
+      <trkpt lat="47.035289" lon="11.435506">
+        <ele>1817.00</ele>
+        <time>2010-10-22T21:19:27Z</time>
+      </trkpt>
+      <trkpt lat="47.035749" lon="11.435123">
+        <ele>1846.00</ele>
+        <time>2010-10-22T21:19:48Z</time>
+      </trkpt>
+      <trkpt lat="47.037392" lon="11.433425">
+        <ele>1921.00</ele>
+        <time>2010-10-22T21:21:09Z</time>
+      </trkpt>
+      <trkpt lat="47.038751" lon="11.432780">
+        <ele>1951.00</ele>
+        <time>2010-10-22T21:22:06Z</time>
+      </trkpt>
+      <trkpt lat="47.040226" lon="11.432552">
+        <ele>1987.00</ele>
+        <time>2010-10-22T21:23:05Z</time>
+      </trkpt>
+      <trkpt lat="47.041764" lon="11.432143">
+        <ele>1997.00</ele>
+        <time>2010-10-22T21:24:08Z</time>
+      </trkpt>
+      <trkpt lat="47.043622" lon="11.431750">
+        <ele>2022.00</ele>
+        <time>2010-10-22T21:25:23Z</time>
+      </trkpt>
+      <trkpt lat="47.044819" lon="11.430952">
+        <ele>2067.00</ele>
+        <time>2010-10-22T21:26:16Z</time>
+      </trkpt>
+      <trkpt lat="47.046056" lon="11.428542">
+        <ele>2124.00</ele>
+        <time>2010-10-22T21:27:38Z</time>
+      </trkpt>
+      <trkpt lat="47.045351" lon="11.426854">
+        <ele>2150.00</ele>
+        <time>2010-10-22T21:28:02Z</time>
+      </trkpt>
+      <trkpt lat="47.043238" lon="11.422545">
+        <ele>2179.00</ele>
+        <time>2010-10-22T21:28:41Z</time>
+      </trkpt>
+      <trkpt lat="47.042755" lon="11.419825">
+        <ele>2209.00</ele>
+        <time>2010-10-22T21:29:24Z</time>
+      </trkpt>
+      <trkpt lat="47.042450" lon="11.418791">
+        <ele>2265.00</ele>
+        <time>2010-10-22T21:30:41Z</time>
+      </trkpt>
+      <trkpt lat="47.042048" lon="11.417062">
+        <ele>2252.00</ele>
+        <time>2010-10-22T21:30:58Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
