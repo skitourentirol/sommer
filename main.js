@@ -168,6 +168,7 @@ async function loadTracks(url) {
             
             von: ${layer.feature.properties.ROUTENSTART}<br>
             nach: ${layer.feature.properties.ROUTENZIEL}<br>
+            <p> ${layer.feature.properties.ROUTENBESCHREIBUNG}</p>
             <p><li> StreckenLänge: ${layer.feature.properties.LAENGE_HAUPTROUTE_KM} km</li>
             <li> Fahrzeit: ${layer.feature.properties.FAHRZEIT}</li>
             <li> Hoehenmeter bergauf: ${layer.feature.properties.HM_BERGAUF} m</li>
@@ -399,15 +400,15 @@ gpxTrack.on("loaded", function(evt) {
     let gpxLayer = evt.target;
     map.fitBounds(gpxLayer.getBounds());
 
-    let popup = `
-            <h3>${gpxLayer.get_name()}</h3>
-            <ul>
-                <li> StreckenLänge: ${(gpxLayer.get_distance()/1000).toFixed()} km</li>
-                <li> tiefster Punkt: ${gpxLayer.get_elevation_min()} m</li>
-                <li> höchster Punkt: ${gpxLayer.get_elevation_max()} m</li>
-                <li> Hoehenmeter bergauf: ${gpxLayer.get_elevation_gain().toFixed()} m</li>
-                <li> Hoehenmeter bergab: ${gpxLayer.get_elevation_loss().toFixed()} m</li>`;
-    gpxLayer.bindPopup(popup);
+    // let popup = `
+    //         <h3>${gpxLayer.get_name()}</h3>
+    //         <ul>
+    //             <li> StreckenLänge: ${(gpxLayer.get_distance()/1000).toFixed()} km</li>
+    //             <li> tiefster Punkt: ${gpxLayer.get_elevation_min()} m</li>
+    //             <li> höchster Punkt: ${gpxLayer.get_elevation_max()} m</li>
+    //             <li> Hoehenmeter bergauf: ${gpxLayer.get_elevation_gain().toFixed()} m</li>
+    //             <li> Hoehenmeter bergab: ${gpxLayer.get_elevation_loss().toFixed()} m</li>`;
+    // gpxLayer.bindPopup(popup);
 });
 
 let elevationControl = L.control.elevation({
