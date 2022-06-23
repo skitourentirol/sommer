@@ -3,9 +3,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:wght@300&display=swap');
 
 body {
-    font-family: "Open Sans", sans-serif;
-    background: url("data/images/summer.jpg"); 
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: url("data/images/summer.jpg");
+    background-attachment: fixed;
 }
+
+h1 {
+    color: rgb(255, 255, 255);
+
+    font-size: 80px;
+    font-weight: 700px;
+    line-height: 64px;
+    margin: 0 0 0;
+    padding: 40px 0px 50px 0px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+h2 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 64px;
+    margin: 0 0 0;
+    
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
 
 a {
     color: black;
@@ -14,6 +41,7 @@ a {
 main {
     max-width: 1200px;
     margin: auto;
+    
 }
 
 header {
@@ -56,10 +84,10 @@ footer nav {
 
 .aws-div-icon span {
     font-size: 1.25em;
-    font-weight: bold;  
+    font-weight: bold;
     padding: 0.3em;
     border: 1px solid silver;
-    text-shadow: 
+    text-shadow:
         -1px -1px 0 white,
         -1px 1px 0 white,
         1px -1px 0 white,
@@ -68,3 +96,63 @@ footer nav {
     transform: translate(-30%, -50%);
 
 }
+
+
+.map {
+    padding: 50px 0px 50px 0px;
+}
+
+.informations {
+    text-align: right;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 
+        0 4px 8px 0 rgba(0, 0, 0, 0.7), 
+        0 6px 20px 0 rgba(0, 0, 0, 0.7);
+        padding: 10px 0px 50px 0px;
+}
+
+
+.informations_text{
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 600;
+    
+    
+    text-align: left;
+    text-transform: lowercase;
+}
+
+.informations_weather{
+    color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin: 0 0 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+
+.informations_headline_w{
+    color: rgba(255, 255, 255, 1);
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0 0 0;
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+.informations_headline_t{
+    color: rgba(255, 255, 255, 1);
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0 0 0;
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
