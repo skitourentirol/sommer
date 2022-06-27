@@ -180,6 +180,7 @@ async function loadTracks(url) {
 loadTracks("https://data-tiris.opendata.arcgis.com/datasets/tiris::radrouten-tirol.geojson");
 
 
+
 // Station
 let drawStation = function(geojson) {
     // Wetterstationen mit Icons und Popups implementieren
@@ -354,7 +355,7 @@ let drawHumidity = function (geojson){
 async function loadData(url) {
     let response = await fetch(url);
     let geojson = await response.json();
-
+    geojson.innerHTML; 
     drawStation(geojson);
     drawTemperature(geojson);
     drawSnowheight(geojson);
