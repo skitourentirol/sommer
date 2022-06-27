@@ -38,9 +38,10 @@
         integrity="sha512-BsUtn1Ar2O78Q8YkY1f2pkioHOs8H43KUlP3PHus8lyAMODNq1CmemnU435dFk/SU37OGG+ooxvmEhAcNTEBFQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- leaflet-elevation -->
+    <!-- Option falls GPX Daten mit Höhe Verfügbar sind -->
+    <!-- leaflet-elevation
     <link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.css" />
-    <script src="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.js"></script>
+    <script src="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.js"></script> -->
 
     <!--Leaflet Markercluster-->
     <link rel="stylesheet"
@@ -68,8 +69,13 @@
 
 
             <div id="map"></div>
-            <div id="profile"></div>
-
+            <!-- <div id="profile"></div> -->
+            <p class="informations_text">
+                <strong>Datenquellen:</strong>
+                <a class="informations_text" href="https://lawinen.report/">Lawinen.report</a> |
+                <a class="informations_text"
+                    href="https://www.data.gv.at/katalog/dataset/bb43170b-30fb-48aa-893f-51c60d27056f">Wetterstationsdaten.Tirol</a>
+            </p>
         </article>
 
         <article class="informations">
@@ -86,7 +92,7 @@
                     amet ante. Praesent bibendum non nibh vel. </p>
 
 
-            <article class="informations_headline_w">Forcast.<br>
+            <article class="informations_headline_w">Forecast.<br>
                 <p class="informations_text">
                     We provide detailed weather informations directly on our map, provided by the avalanch report. However, if your looking to make the tour in the next couple of days, feel free to look at the forcast beneath, which was made possible by weather-labs.de:</p>
                 

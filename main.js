@@ -1,4 +1,4 @@
-/* A TOUR A DAY */
+/* A TOUR A DAY Summer */
 
 
 let innsbruck = {
@@ -11,11 +11,6 @@ let innsbruck = {
 const eGrundkarteTirol = {
     sommer: L.tileLayer(
         "http://wmts.kartetirol.at/gdi_summer/{z}/{x}/{y}.png", {
-            attribution: `Datenquelle: <a href="https://www.data.gv.at/katalog/dataset/land-tirol_elektronischekartetirol">eGrundkarte Tirol</a>`
-        }
-    ),
-    winter: L.tileLayer(
-        "http://wmts.kartetirol.at/gdi_winter/{z}/{x}/{y}.png", {
             attribution: `Datenquelle: <a href="https://www.data.gv.at/katalog/dataset/land-tirol_elektronischekartetirol">eGrundkarte Tirol</a>`
         }
     ),
@@ -71,7 +66,6 @@ let layerControl = L.control.layers({
     "Schneehöhe": overlays.snowheight,
     "Wind": overlays.wind,
     "Radrouten": overlays.gpx,
-    //"Almen": overelays.almen
 }).addTo(map);
 
 
@@ -89,11 +83,9 @@ L.control.fullscreen().addTo(map);
 // Diese Layer beim Laden anzeigen 
 overlays.gpx.addTo(map);
 
-// Farben nach Wert und Sc hwellen ermitteln
+// Farben nach Wert und Schwellen ermitteln
 let getColor = function(value,ramp) {
-    //console.log(value,ramp);
     for (let rule of ramp) {
-        //console.log(rule)
         if (value >= rule.min && value < rule.max)
         return rule.color; 
     }
@@ -101,20 +93,16 @@ let getColor = function(value,ramp) {
 
 
 // Almen anzeigen 
-
 async function loadHuts(url) {
     let response = await fetch(url);
     let geojson = await response.json(); 
-    // console.log(geoJsonPoint.properties.NAME);
     let overlay = L.markerClusterGroup();
     layerControl.addOverlay(overlay,"Almen");
     overlay.addTo(map);
-    
-    // let overlay = L.MarkerClusterGroup();
+
 
     L.geoJSON(geojson,{
         pointToLayer: function(geoJsonPoint,latlng){
-            // console.log(geoJsonPoint.properties.NAME);
             let popup = `
                 <strong>${geoJsonPoint.properties.NAME}</strong>
             `;
@@ -140,15 +128,9 @@ async function loadTracks(url) {
     let overlay = L.featureGroup();
     layerControl.addOverlay(overlay,"Bikerouten");
     overlay.addTo(map);
-    // console.log(geoJsonPoint.properties.SCHWIERIGKEITSGRAD)
 
     L.geoJSON(geojson, {
         style: function(feature) {
-            // switch (feature.properties.SCHWIERIGKEITSGRAD){
-            //     case "leicht": return{color:"#2ECC40"};
-            //     case "mittelschwierig": return{color:"#0074D9"};
-            //     case "schwierig": return{color:"#FF4136"};
-            // }
             let colors = {
                 "schwierig" : "#FF4136",
                 "mittelschwierig": "#0074D9", 
@@ -186,8 +168,6 @@ let drawStation = function(geojson) {
     // Wetterstationen mit Icons und Popups implementieren
     L.geoJson(geojson, {
         pointToLayer: function(geoJsonPoint, latlng) {
-            // L.marker(latlng).addTo(map)
-            // console.log(geoJsonPoint.geometry.coordinates[2]);
             let popup = `
                 <strong>${geoJsonPoint.properties.name}<br></strong>
                 Lufttemperatur (°C): ${geoJsonPoint.properties.LT}<br>
