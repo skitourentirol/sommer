@@ -51,8 +51,6 @@ let map = L.map("map", {
 
 // Layer control mit WMTS Hintergründen und Overlays
 let layerControl = L.control.layers({
-    // "Grundkarte Tirol": startLayer,
-    // "Esri World Imagery": L.tileLayer.provider("Esri.WorldImagery"),
     "eGrundkarte Tirol Sommer": startLayer,
     "eGrundkarte Tirol Orthofoto": eGrundkarteTirol.ortho,
     "eGrundkarte Tirol Orthofoto mit Beschriftung": L.layerGroup([
@@ -205,8 +203,6 @@ let drawTemperature = function(geojson) {
 
         },
         pointToLayer: function(geoJsonPoint, latlng) {
-            // L.marker(latlng).addTo(map)
-            // console.log(geoJsonPoint.geometry.coordinates[2]);
             let popup = `
                 <strong>${geoJsonPoint.properties.name}</strong><br>
                 (${geoJsonPoint.geometry.coordinates[2]} m ü.d.M.)
@@ -381,12 +377,12 @@ gpxTrack.on("loaded", function(evt) {
     
 }).addTo(map);
 
+// Optional (falls Daten mit Höhe vorliegen)
 // let elevationControl = L.control.elevation({
 //     time: false,
 //     elevationDiv: "#profile",
 //     theme: "bike-tirol",
 //     height: 200,
-    
 
 // }).addTo(map);
 // gpxTrack.on("addline", function(evt){
