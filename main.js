@@ -77,6 +77,11 @@ L.control.scale({
     imperial: false
 }).addTo(map);
 
+// Minimap
+var osm2 = new L.TileLayer("http://wmts.kartetirol.at/gdi_summer/{z}/{x}/{y}.png",{minZoom: 6, maxZoom:7, attribution: "https://www.data.gv.at/katalog/dataset/land-tirol_elektronischekartetirol"});
+var miniMap = new L.Control.MiniMap(osm2).addTo(map);
+
+
 // Fullscreen control
 L.control.fullscreen().addTo(map);
 
@@ -99,7 +104,6 @@ async function loadHuts(url) {
     let overlay = L.markerClusterGroup();
     layerControl.addOverlay(overlay,"Almen");
     overlay.addTo(map);
-
 
     L.geoJSON(geojson,{
         pointToLayer: function(geoJsonPoint,latlng){
@@ -136,12 +140,10 @@ async function loadTracks(url) {
                 "mittelschwierig": "#0074D9", 
                 "leicht": "#2ECC40",
             };
-
             return {
                 color: `${colors[feature.properties.SCHWIERIGKEITSGRAD]}`,
                 weight: 4,
                 dashArray: [10, 6]
-
             } 
         }
     }).bindPopup(function (layer) {
@@ -180,7 +182,7 @@ let drawStation = function(geojson) {
             `;
             return L.marker(latlng, {
                 icon: L.icon({
-                    iconUrl: `/icons/wifi.png`,
+                    iconUrl: `/icons/station.png`,
                     iconAnchor: [16, 37],
                     popupAnchor: [0, -37]
                 })
@@ -348,7 +350,6 @@ loadData("https://static.avalanche.report/weather_stations/stations.geojson");
 
 // Generate Random Number 
 let randomNumber = Math.floor(Math.random() * 760);
-console.log(randomNumber);
 let strRandom = randomNumber.toString();
 
 // Generate path with RandomNumber
@@ -356,9 +357,6 @@ const path = "./data/Radtouren/"
 const endPath = ".gpx"
 const str1 = path.concat(strRandom)
 let str = str1 + endPath
-console.log(str)
-
-
 
 // GPX Track Layer implementieren with random Track
 let gpxTrack = new L.GPX(str, {
@@ -380,16 +378,6 @@ gpxTrack.on("loaded", function(evt) {
     console.log("Loaded gpx event: ", evt);
     let gpxLayer = evt.target;
     map.fitBounds(gpxLayer.getBounds());
-
-    // let popup = `
-    //         <h3>${gpxLayer.get_name()}</h3>
-    //         <ul>
-    //             <li> StreckenLänge: ${(gpxLayer.get_distance()/1000).toFixed()} km</li>
-    //             <li> tiefster Punkt: ${gpxLayer.get_elevation_min()} m</li>
-    //             <li> höchster Punkt: ${gpxLayer.get_elevation_max()} m</li>
-    //             <li> Hoehenmeter bergauf: ${gpxLayer.get_elevation_gain().toFixed()} m</li>
-    //             <li> Hoehenmeter bergab: ${gpxLayer.get_elevation_loss().toFixed()} m</li>`;
-    // gpxLayer.bindPopup(popup);
 }).addTo(map);
 
 // let elevationControl = L.control.elevation({
