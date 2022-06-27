@@ -378,6 +378,7 @@ gpxTrack.on("loaded", function(evt) {
     console.log("Loaded gpx event: ", evt);
     let gpxLayer = evt.target;
     map.fitBounds(gpxLayer.getBounds());
+    
 }).addTo(map);
 
 // let elevationControl = L.control.elevation({
