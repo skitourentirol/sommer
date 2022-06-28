@@ -88,6 +88,56 @@ footer nav {
     text-align: left
 }
 
+/* Styling für Dropdown-Menu */
+.dropbtn {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: lowercase;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 160px;
+    box-shadow:
+      0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: rgba(255, 255, 255, 0.400);
+  }
+
 
 
 
