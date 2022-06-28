@@ -1,4 +1,4 @@
-/* Stile für das Wetterstationen Tirol Beispiel */
+/* Stile fürSommerkarte */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:wght@300&display=swap');
 
@@ -64,6 +64,7 @@ footer nav {
 
 }
 
+/* Stile für Body, Map und Texte */
 
 .map {
     padding: 50px 0px 50px 0px;
