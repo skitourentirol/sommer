@@ -89,6 +89,21 @@ footer nav {
     text-align: left
 }
 
+.shadow {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.1),
+    0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.informations_foot{
+  color: rgba(255, 255, 255, 1);
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0 0 0;
+  text-align: left
+}
+
 /* Styling für Dropdown-Menu */
 .dropbtn {
     background-color: rgba(255, 255, 255, 0.1);
