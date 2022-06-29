@@ -180,7 +180,7 @@ let drawStation = function(geojson) {
             `;
             return L.marker(latlng, {
                 icon: L.icon({
-                    iconUrl: `/icons/station.png`,
+                    iconUrl: `icons/station.png`,
                     iconAnchor: [16, 37],
                     popupAnchor: [0, -37]
                 })
