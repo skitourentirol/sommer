@@ -91,7 +91,7 @@ let getColor = function(value,ramp) {
     for (let rule of ramp) {
         if (value >= rule.min && value < rule.max)
         return rule.color; 
-    }
+    } 
 };
 
 
