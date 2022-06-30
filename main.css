@@ -4,8 +4,8 @@
 
 body {
     font-family: 'Open Sans Condensed', sans-serif;
-    background: url("data/images/summer.jpg");
-    background-attachment: fixed;
+    background: url("data/images/summer.jpg") no-repeat center fixed;
+    background-size: cover;
 }
 
 h1 {
